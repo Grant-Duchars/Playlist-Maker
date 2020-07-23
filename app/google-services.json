@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1001855183823",
+    "firebase_url": "https://playlist-maker-8929a.firebaseio.com",
+    "project_id": "playlist-maker-8929a",
+    "storage_bucket": "playlist-maker-8929a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001855183823:android:b24d20a6b8906576dc40ba",
+        "android_client_info": {
+          "package_name": "edu.rosehulman.ducharg.playlistmaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001855183823-3hlo6petmkv8f0naaksnv67co7u7s120.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.rosehulman.ducharg.playlistmaker",
+            "certificate_hash": "461ba3bc413c55b50e30a9e896e3d04ea0517a22"
+          }
+        },
+        {
+          "client_id": "1001855183823-tqeinjss1vsleijt8n53iu4c7m1105u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeJq_xykwkajzGtd_0RgbMtcHZ-GDylpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001855183823-tqeinjss1vsleijt8n53iu4c7m1105u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
