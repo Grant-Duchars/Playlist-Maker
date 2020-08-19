@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">Playlist Maker</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="home_fragment_label">Home Fragment</string>
-    <string name="playlists_fragment_label">Playlists Fragment</string>
-    <!-- Strings used for Bot Nav Menu and fragment titles -->
-    <string name="home">Home</string>
     <string name="playlists">Playlists</string>
-    <string name="browse">Browse</string>
-    <string name="you">You</string>
+    <string name="account">Account</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="play">Play</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="search">Search</string>
+    <string name="album">Album</string>
+    <string name="song">Song</string>
 </resources>

@@ -3,18 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".PlaylistsFragment">
+    android:background="@color/colorPurple"
+    tools:context=".PlaylistFragment">
 
     <TextView
         android:id="@+id/playlists_frag_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/hammersmithone"
         android:text="@string/playlists"
         android:textColor="@color/colorWhite"
         android:textSize="40sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playlists_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_add" />
+
+    <ImageButton
+        android:id="@+id/button_account"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_you"
+        android:backgroundTint="@color/colorWhite" />
+
+    <include
+        layout="@layout/playlist_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/playlists_frag_title" />
 
 </RelativeLayout>

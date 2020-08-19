@@ -3,29 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/HomeFragment">
+    app:startDestination="@id/LoginFragment">
 
     <fragment
-        android:id="@+id/HomeFragment"
-        android:name="edu.rosehulman.ducharg.playlistmaker.HomeFragment"
-        android:label="@string/home_fragment_label"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/LoginFragment"
+        android:name="edu.rosehulman.ducharg.playlistmaker.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_LoginFragment_to_PlaylistFragment"
+            app:destination="@id/PlaylistFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/PlaylistsFragment"
-        android:name="edu.rosehulman.ducharg.playlistmaker.PlaylistsFragment"
-        android:label="@string/playlists_fragment_label"
-        tools:layout="@layout/fragment_playlists" />
+        android:id="@+id/PlaylistFragment"
+        android:name="edu.rosehulman.ducharg.playlistmaker.PlaylistFragment"
+        android:label="Playlists Fragment"
+        tools:layout="@layout/fragment_playlists">
+        <action
+            android:id="@+id/action_PlaylistFragment_to_AccountFragment"
+            app:destination="@id/AccountFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_PlaylistFragment_to_PlaylistDetailFragment"
+            app:destination="@id/PlaylistDetailFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
 
     <fragment
-        android:id="@+id/BrowseFragment"
-        android:name="edu.rosehulman.ducharg.playlistmaker.BrowseFragment"
-        android:label="Browse Fragment"
-        tools:layout="@layout/fragment_browse" />
+        android:id="@+id/AccountFragment"
+        android:name="edu.rosehulman.ducharg.playlistmaker.AccountFragment"
+        android:label="Account Fragment"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_AccountFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
-        android:id="@+id/YouFragment"
-        android:name="edu.rosehulman.ducharg.playlistmaker.YouFragment"
-        android:label="You Fragment"
-        tools:layout="@layout/fragment_you" />
+        android:id="@+id/PlaylistDetailFragment"
+        android:name="edu.rosehulman.ducharg.playlistmaker.PlaylistDetailFragment"
+        android:label="Playlist Detail Fragment"
+        tools:layout="@layout/fragment_playlist_detail">
+        <argument
+            android:name="argPlaylist"
+            app:argType="edu.rosehulman.ducharg.playlistmaker.Playlist" />
+    </fragment>
+
 </navigation>
